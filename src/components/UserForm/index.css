@@ -1,0 +1,163 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.app-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 550px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.input-field {
+  padding: 10px;
+  margin-top: 6px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+  /* border-color: #4caf50; */
+  outline: none;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #0967d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.message {
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.users-table {
+  width: 100%;
+  max-width: 730px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+  background-color: #0967d2;
+  color: white;
+  padding: 12px;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table-data {
+  /* padding: 12px; */
+  font-size: 16px;
+  font-family: Inter;
+  color: #333;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .form-container,
+  .users-table {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  .submit-btn {
+    padding: 14px;
+  }
+
+  .users-table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+  }
+}
+
+.error-field {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
